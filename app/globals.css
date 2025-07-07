@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --walmart-blue: #0071ce;
+  --walmart-yellow: #ffc220;
+  --walmart-dark-blue: #004c91;
+  --walmart-light-blue: #e6f3ff;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-gray-900 font-sans;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .walmart-blue {
+    background-color: var(--walmart-blue);
+  }
+  .walmart-yellow {
+    background-color: var(--walmart-yellow);
+  }
+  .walmart-text-blue {
+    color: var(--walmart-blue);
+  }
+  .walmart-text-yellow {
+    color: var(--walmart-yellow);
+  }
+  .walmart-border-blue {
+    border-color: var(--walmart-blue);
+  }
+}
